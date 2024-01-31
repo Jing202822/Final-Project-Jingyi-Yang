@@ -120,7 +120,7 @@ freq_sumary_table_year %>%
 
 ## Summary the numerical variables- percentage
 
-To summarize the numerical variables "percentage" (or percent of the students), grouping the variable into the different demographic categories based on various illnesses is necessary. The summary includes information about the central tendency of the percentage, including the mean and median. It aims to describe the center of distribution of data[@seanconway]. The summary also includes range, standard deviation, maximum, minimum, and quartile information. It shows the variability or the differences between values in this numerical variable and can determine whether or not the variable "percentage" contains the extreme variable[@seanconway][@3.2-id].
+To summarize the numerical variables "percentage" (or percent of the students), grouping the variable into the different demographic categories based on various illnesses is necessary. The summary includes information about the central tendency of the percentage, including the mean and median. It aims to describe the center of distribution of data[@seanconway]. The summary also includes range, standard deviation, maximum, minimum, and quartile information. It shows the variability or the differences between values in this numerical variable and can determine whether or not the variable "percentage" contains the extreme variable [@seanconway][@3.2-id].
 
 The formula used to determine the extreme variable, or outlier, is:
 
