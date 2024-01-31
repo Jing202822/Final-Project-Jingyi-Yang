@@ -446,8 +446,9 @@ health_clean %>%
     guides(col=guide_legend(nrow=4))
 }
 
-unique(poverty_level$sub_name)
+```
 
+```{r}
 `Below 100% graphic` <- poverty_level_visualization ("Below 100%")+
   labs(title = "Percentage Of Below 100% Over Time For Various Illness")
 
