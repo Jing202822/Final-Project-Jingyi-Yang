@@ -120,7 +120,7 @@ freq_sumary_table_year %>%
 
 ## Summary the numerical variables- percentage
 
-To summarize the numerical variables "percentage" (or percent of the students), grouping the variable into the different demographic categories based on various illnesses is necessary. The summary includes information about the central tendency of the percentage, including the mean and median. It aims to describe the center of distribution of data[@seanconway]. The summary also includes range, standard deviation, maximum, minimum, and quartile information. It shows the variability or the differences between values in this numerical variable and can determine whether or not the variable "percentage" contains the extreme variable [@seanconway][@3.2-id].
+To summarize the numerical variables "percentage" (or percent of the students), grouping the variable into the different demographic categories based on various illnesses is necessary. The summary includes information about the central tendency of the percentage, including the mean and median. It aims to describe the center of distribution of data[@seanconway]. The summary also includes range, standard deviation, maximum, minimum, and quartile information. It shows the variability or the differences between values in this numerical variable and can determine whether or not the variable "percentage" contains the extreme variable[@seanconway] [@3.2-id].
 
 The formula used to determine the extreme variable, or outlier, is:
 
@@ -538,7 +538,8 @@ illness_median%>%
   summarise(largest_max= max(max), largest_minimal= max(min))
 
 illness_change_over_time+
-   gghighlight(median>0.14)
+   gghighlight(median>0.14)+
+  labs(title = "Trends For Various Illness Over Time-Most Prevalent")
 ```
 
 According to the graphic above, "Hay fever or respiratory allergy" is the most common illness.
@@ -652,7 +653,8 @@ illness_median %>%
   arrange(desc(range))
 
 illness_change_over_time+
-   gghighlight(max(median)-min(median)>0.05)
+   gghighlight(max(median)-min(median)>0.05)+
+  labs(title = "Trends For Various Illness Over Time-Increase Most")
 ```
 
 According to the graphic, [*"Skin Allergy"*]{.underline} is the illness that increase most over time.
@@ -718,7 +720,7 @@ hispanic_skin<- df[4]%>% as.data.frame()
 hispanic_skin 
 
 Visualization(hispanic_skin)+
-  labs(title = "Percentages For Hispanic Origin And Race Over Time /n -Skin Allergy")+
+  labs(title = "Percentages For Hispanic Origin And Race Over Time \n -Skin Allergy")+
    guides(col=guide_legend(nrow=4))
 
 poverty_skin<- df[5]%>% as.data.frame() %>% mutate(sub_name=factor(sub_name,levels=c("Below 100%", "100%-199%", "200%-399%","400% or more")))
